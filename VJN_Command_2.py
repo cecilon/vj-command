@@ -2,6 +2,7 @@ from VJN_Command_Tools import *
 
 import time
 import asyncio
+import os
 
 pricesCrepePath = 'D:\Personnal Backup\Document\Association\VJN\crepes disponibles pour le prochain event.txt'
 
@@ -288,9 +289,8 @@ async def on_disconnect():
     #await deleteAssignMsg(AssignmentChan)
     return
 
-
 try:
-    bot.run("OTE0NzYxODA1MTcwMTE0NTkx.YaRwUQ.7VuKL58TwVAXXnFqUjuVhv2777o")
+    bot.run(os.getenv('TOKEN'))
 finally:
     allCmds.close()
     saveMapper()
