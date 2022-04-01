@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "node-red-dashboard": "^2.29.3"
-  },
-  "scripts": {
-	  "start": "python VJN_Command_2.py"
-  }
-}
